@@ -1,6 +1,6 @@
 function App() {
   return (
-    <hi>Hello Word!</hi>
+    <hi className="font-bold">Hello Word!</hi>
   )
 }
 
