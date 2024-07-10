@@ -1,6 +1,8 @@
+import Icon from "./components/Icon"
+
 function App() {
   return (
-    <hi className="font-bold">Hello Word!</hi>
+    <Icon />
   )
 }
 
