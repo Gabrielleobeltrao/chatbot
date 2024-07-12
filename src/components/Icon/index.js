@@ -1,3 +1,5 @@
+import Chat from "../Chat"
+
 function Icon() {
     return (
         <section className="relative w-dvw h-dvh">
@@ -11,6 +13,7 @@ function Icon() {
                     <h3 className="text-sm text-center text-white">2</h3>
                 </div>
             </div>
+            <Chat />
         </section>
     )
 }
