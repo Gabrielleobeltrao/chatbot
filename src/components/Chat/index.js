@@ -1,5 +1,7 @@
-function Chat() {
+import MenssageBot from "../MessageBot"
+import MenssageClient from "../MessageClient"
 
+function Chat() {
     return (
         <div className="flex flex-col w-72 h-[550px] fixed right-5 bottom-0 bg-gray-300 rounded-t-3xl">
             <div className="flex py-3 px-4 justify-between">
@@ -20,42 +22,9 @@ function Chat() {
                     alt=""
                 />
             </div>
-            <div className="flex flex-col flex-1 bg-gray-400 rounded-t-xl px-4 py-2 overflow-y-auto">
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
-                <h1>teste</h1>
+            <div className="flex flex-col flex-1 bg-gray-400 rounded-t-xl px-4 py-4 overflow-y-auto gap-2.5">
+            <MenssageBot />
+            <MenssageClient />
             </div>
             <div className='flex-none px-4'>
                 <textarea
