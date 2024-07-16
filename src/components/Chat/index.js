@@ -1,9 +1,11 @@
 import MenssageBot from "../MessageBot"
 import MenssageClient from "../MessageClient"
 
-function Chat() {
+function Chat({visible, setVisible}) {
     return (
-        <div className="flex flex-col w-72 h-[550px] fixed right-5 bottom-0 bg-gray-300 rounded-t-3xl">
+        <div 
+            className={`flex flex-col w-72 h-[550px] fixed right-5 bottom-0 bg-gray-300 rounded-t-3xl transform transition-transform duration-700 ${visible ? 'translate-y-0' : 'translate-y-dvh'}`}
+        >
             <div className="flex py-3 px-4 justify-between">
                 <div className="flex">
                     <img
@@ -17,7 +19,8 @@ function Chat() {
                     </div>
                 </div>
                 <img
-                    className="h-5" 
+                    className="h-5"
+                    onClick={() => setVisible(false)}
                     src="#"
                     alt=""
                 />

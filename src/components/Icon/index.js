@@ -1,9 +1,16 @@
+import { useState } from "react"
 import Chat from "../Chat"
 
 function Icon() {
+
+    const [visible, setVisible] = useState(false)
+
     return (
         <section className="relative w-dvw h-dvh">
-            <div className="absolute bottom-5 right-5">
+            <div 
+                className="absolute bottom-5 right-5"
+                onClick={() => setVisible(true)}
+            >
                 <img
                     className="relative rounded-full bg-gray-500 w-12 h-12" 
                     src="#"
@@ -13,7 +20,10 @@ function Icon() {
                     <h3 className="text-sm text-center text-white">2</h3>
                 </div>
             </div>
-            <Chat />
+            <Chat 
+               visible={visible}
+               setVisible={setVisible}
+            />
         </section>
     )
 }
