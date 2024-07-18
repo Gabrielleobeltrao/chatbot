@@ -8,6 +8,14 @@ module.exports = {
       translate: {
         'dvh': '100dvh',
       },
+      colors: {
+        'gray': '#BFBFBF',
+        'light-gray': '#F2F2F2',
+        'green': '#C4D925',
+      },
+      borderWidth: {
+        '3': '3px',
+      },
     },
   },
   plugins: [],

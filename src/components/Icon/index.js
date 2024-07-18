@@ -16,7 +16,7 @@ function Icon() {
                     src="#"
                     alt=""
                 />
-                <div className="rounded-full bg-red-600 w-5 h-5 absolute -top-1 -left-1">
+                <div className="rounded-full bg-green w-5 h-5 absolute -top-1 -left-1">
                     <h3 className="text-sm text-center text-white">2</h3>
                 </div>
             </div>
